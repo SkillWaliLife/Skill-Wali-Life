@@ -3,136 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Wali Life | Online Income & Digital Skills (Bizgurukul)</title>
+  <title>Skill Wali Life | Learn & Earn Skills</title>
+
   <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#f7f7f7; color:#222;}
-    .container {max-width:1100px; margin:auto; padding:20px;}
-    header {background:linear-gradient(135deg,#4f46e5,#6366f1); color:#fff; padding:60px 20px; text-align:center;}
-    header h1 {font-size:38px; margin-bottom:15px;}
-    header p {font-size:19px; line-height:1.5;}
-    .btn {display:inline-block; margin-top:25px; padding:14px 30px; background:#22c55e; color:#fff; text-decoration:none; font-size:18px; border-radius:8px;}
-    .section {background:#fff; margin-top:35px; padding:35px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.08);}    
-    h2 {color:#4f46e5; margin-bottom:18px;}
-    ul li {margin:12px 0; font-size:16px;}
-    .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;}
-    .card {background:#f9fafb; padding:22px; border-radius:10px; font-weight:600;}
-    footer {margin-top:50px; padding:25px; text-align:center; font-size:14px; color:#555;}
-    .disclaimer {font-size:13px; color:#777; margin-top:15px; line-height:1.5;}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{overflow-y:auto;background:#f8fafc;color:#0f172a}
+    a{text-decoration:none}
+
+    /* NAVBAR */
+    nav{
+      position:fixed;top:0;left:0;width:100%;z-index:1000;
+      background:#0f172a;color:#fff;
+    }
+    nav .wrap{
+      max-width:1100px;margin:auto;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 20px;
+    }
+    nav a{color:#fff;margin-left:18px;font-size:14px}
+
+    /* HERO */
+    header{
+      min-height:100vh;
+      background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      display:flex;align-items:center;justify-content:center;
+      padding-top:80px;
+    }
+    header .hero{
+      background:rgba(0,0,0,.6);
+      padding:50px 30px;border-radius:12px;
+      color:#fff;text-align:center;max-width:700px;
+    }
+    header h1{font-size:42px;margin-bottom:15px}
+    header p{font-size:18px;margin-bottom:25px}
+
+    .btn{
+      display:inline-block;padding:14px 26px;border-radius:30px;
+      background:#22c55e;color:#fff;font-weight:bold
+    }
+
+    /* SECTIONS */
+    .section{max-width:1000px;margin:auto;padding:80px 20px}
+    .section h2{text-align:center;margin-bottom:30px;font-size:30px}
+
+    /* COURSE */
+    ul{list-style:none;max-width:600px;margin:20px auto}
+    ul li{padding:10px 0;font-size:16px}
+
+    /* SOCIAL */
+    .social-links{
+      display:flex;justify-content:center;gap:15px;margin-top:20px;flex-wrap:wrap
+    }
+    .social-links a{
+      padding:10px 18px;border-radius:6px;background:#2563eb;color:#fff;font-size:14px
+    }
+
+    /* FOOTER */
+    footer{text-align:center;padding:20px;background:#0f172a;color:#fff}
+
+    /* WHATSAPP FLOAT */
+    .wa-float{
+      position:fixed;bottom:20px;right:20px;z-index:2000;
+      background:#25D366;color:#fff;padding:14px 22px;
+      border-radius:50px;font-weight:bold
+    }
   </style>
 </head>
 <body>
-<nav style="position:fixed;top:0;left:0;width:100%;background:#0f172a;color:#fff;z-index:1000;">
-  <div style="max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;">
-    <div style="font-weight:700;font-size:18px;letter-spacing:1px;">SKILL WALI LIFE</div>
-    <div style="display:flex;gap:18px;">
-      <a href="#home" style="color:#fff;text-decoration:none;">Home</a>
-      <a href="#courses" style="color:#fff;text-decoration:none;">Courses</a>
-      <a href="#about" style="color:#fff;text-decoration:none;">About</a>
-      <a href="#contact" style="color:#fff;text-decoration:none;">Contact</a>
+
+<nav>
+  <div class="wrap">
+    <strong>SKILL WALI LIFE</strong>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
-<div style="height:70px"></div>
 
 <header id="home">
-  <h1>Skill Wali Life के साथ Online Income की शुरुआत करें</h1>
-  <p>
-    चाहे आप Student हों, Job करते हों या Business में हों —<br/>
-    Skill सीखकर Digital Income बनाना सीखिए (पूरी तरह हिंदी में)
-  </p>
-  <a href="#buy" class="btn">Free Guidance के लिए WhatsApp करें</a>
+  <div class="hero">
+    <h1>Empower Your Skills Today</h1>
+    <p>Students, Job Persons, Housewives & Freshers के लिए Best Online Skills Platform</p>
+    <a href="#courses" class="btn">Explore Courses</a>
+  </div>
 </header>
 
-<div class="container">
+<section class="section" id="courses">
+  <h2>Bizgurukul Course</h2>
+  <p style="text-align:center">India का trusted digital learning platform</p>
 
-  <div class="section" id="courses">
-    <h2>Our Featured Course – Bizgurukul</h2>
-    <p>
-      Bizgurukul India का trusted digital learning platform है, जहाँ से
-      Students, Job / Private Job Persons, Housewives और Freshers
-      step-by-step online income skills सीख सकते हैं।
-    </p>
+  <ul>
+    <li>✔ Affiliate Marketing (Beginner to Advance)</li>
+    <li>✔ Digital Marketing Basics</li>
+    <li>✔ Instagram & YouTube Growth</li>
+    <li>✔ Lifetime Access + Community Support</li>
+  </ul>
 
-    <ul>
-      <li>✔ Affiliate Marketing (Beginner to Advanced)</li>
-      <li>✔ Digital Marketing Fundamentals</li>
-      <li>✔ Instagram & YouTube Growth Strategy</li>
-      <li>✔ Personal Branding & Online Tools</li>
-      <li>✔ Lifetime Access + Community Support</li>
-    </ul>
-
-    <p><strong>Language:</strong> Hindi (Beginner Friendly)</p>
-
-    <a href="https://www.bizgurukul.com/Signup?id=cbcDJ7DVHoQ=&ref=FqzzlA7Eq7I=&user_id=EPV1D/mMyA4=&lid=OF5J92z8zsM24gIvo9QujLg/Hho0+DNW" 
-       class="btn" style="background:#16a34a">Join Course – Official Page</a>
-    <br/><br/>
-    <a href="https://wa.me/919816892422?text=Hi%2C%20mujhe%20Bizgurukul%20course%20ke%20bare%20me%20detail%20chahiye" 
-       class="btn" style="background:#2563eb">Free Guidance on WhatsApp</a>
+  <div style="text-align:center">
+    <a class="btn" href="https://www.bizgurukul.com/Signup?id=cbcDJ7DVHoQ=&ref=FqzzlA7Eq7I=&user_id=EPV1D/mMyA4=&lid=OF5J92z8zsM24gIvo9QujLg/Hho0+DNW" target="_blank">Join Official Course</a>
   </div>
+</section>
 
-  <div class="section">
-    <h2>इस Course में आप क्या सीखेंगे?</h2>
-    <div class="grid">
-      <div class="card">Affiliate Marketing (Step-by-Step)</div>
-      <div class="card">Digital Marketing की Strong Foundation</div>
-      <div class="card">Instagram & YouTube Growth Strategies</div>
-      <div class="card">Personal Branding & Trust Building</div>
-      <div class="card">Online Tools & Automation</div>
-      <div class="card">Income Mindset & Practical Strategy</div>
-    </div>
+<section class="section" id="contact">
+  <h2>Connect With Us</h2>
+  <div class="social-links">
+    <a href="https://youtube.com/@skillwalilife?si=eHHUSfCLqeyOPkK6" target="_blank">YouTube</a>
+    <a href="https://www.instagram.com/skillwalilife?igsh=Mno1Z3FoendtYWQz" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">Facebook</a>
   </div>
-
-  <div class="section" id="about">
-    <h2>Bizgurukul को क्यों चुनें?</h2>
-    <ul>
-      <li>India का Trusted & Established EdTech Platform</li>
-      <li>Beginner to Advanced – Structured Learning</li>
-      <li>Lifetime Course Access (One-Time Investment)</li>
-      <li>Hindi Language + Practical Training</li>
-      <li>Strong Community Support & Mentorship</li>
-    </ul>
-  </div>
-
-  <div class="section" id="contact">
-    <h2>Contact & Connect With Us</h2>
-    <p>Free guidance, course details या support के लिए हमसे जुड़ें:</p>
-
-    <!-- Simple Text Links -->
-    <p>📸 Instagram: <a href="https://www.instagram.com/skillwalilife?igsh=Mno1Z3FoendtYWQz" target="_blank">@skillwalilife</a></p>
-    <p>▶️ YouTube: <a href="https://youtube.com/@skillwalilife?si=eHHUSfCLqeyOPkK6" target="_blank">Skill Wali Life</a></p>
-    <p>✈️ Telegram: <a href="https://t.me/skillwalilife" target="_blank">Join Telegram Channel</a></p>
-
-    <!-- Professional Button Style Links -->
-    <div class="social-links">
-      <a href="https://www.instagram.com/skillwalilife?igsh=Mno1Z3FoendtYWQz" target="_blank">Instagram</a>
-      <a href="https://youtube.com/@skillwalilife?si=eHHUSfCLqeyOPkK6" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">Facebook</a>
-      <a href="https://t.me/skillwalilife" target="_blank">Telegram</a>
-    </div>
-
-    <br/>
-    <a href="https://wa.me/919816892422?text=Hi%2C%20mujhe%20Bizgurukul%20course%20ke%20bare%20me%20detail%20chahiye" class="btn">WhatsApp पर बात करें</a>
-
-    <p class="disclaimer">
-      ⚠️ Disclaimer: यह एक Affiliate Promotion Page है। Income की कोई गारंटी नहीं है।
-      Results आपकी skills, effort और consistency पर depend करते हैं।
-    </p>
-  </div>
-
-</div>
+</section>
 
 <footer>
-  <p>© 2025 | Skill Wali Life – Digital Skills & Online Income</p>
+  <p>© 2025 Skill Wali Life | Affiliate Disclaimer Applied</p>
 </footer>
 
-<!-- Sticky WhatsApp Floating Button -->
-<a href="https://wa.me/919816892422?text=Hi%2C%20mujhe%20Bizgurukul%20course%20ke%20bare%20me%20detail%20chahiye" 
-   style="position:fixed;bottom:20px;right:20px;z-index:9999;
-   background:#25D366;color:#fff;padding:14px 22px;
-   border-radius:50px;text-decoration:none;font-weight:bold;
-   box-shadow:0 4px 12px rgba(0,0,0,0.3);">
-   💬 WhatsApp
-</a>
+<a class="wa-float" href="https://wa.me/919816892422" target="_blank">💬 WhatsApp</a>
 
 </body>
 </html>
