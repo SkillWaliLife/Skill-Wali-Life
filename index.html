@@ -1,170 +1,200 @@
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Skill Wali Life | Learn Digital Skills & Earn Online</title>
+
+  <meta name="description" content="Learn Digital Skills, Freelancing & Online Earning. Best platform for Students, Job Persons, Housewives & Freshers." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Wali Life | Digital Skills for 2026</title>  <!-- Google Font (Font style like Image 2 – Bold, Clean, Professional) -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  <style>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
-    body { background:#fff; color:#111; }
+    body { background: #ffffff; color: #1a1a1a; }
 
-    /* ===== HEADER ===== */
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255,255,255,0.95);
+      background: #0f172a;
+      color: #fff;
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 25px;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
-    header .logo {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
+    header h1 { font-size: 20px; }
 
-    header nav a {
-      margin-left: 18px;
+    nav a {
+      color: #fff;
+      margin-left: 15px;
       text-decoration: none;
       font-weight: 500;
-      color: #111;
     }
 
-    /* ===== HERO (Layout like Image 1) ===== */
     .hero {
       margin-top: 80px;
-      min-height: 90vh;
+      padding: 60px 20px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
-      padding: 40px;
-      background: linear-gradient(to right, #ff9f55, #ffb877);
+      justify-content: center;
+      background: #f8fafc;
     }
 
     .hero-text {
       max-width: 520px;
+      padding: 20px;
     }
 
-    .hero-text h1 {
-      font-size: 48px;
-      font-weight: 800;
-      line-height: 1.2;
-      color: #fff;
-      margin-bottom: 15px;
+    .hero-text h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #020617;
     }
 
     .hero-text p {
-      color: #fff;
-      font-size: 18px;
-      margin-bottom: 25px;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #334155;
     }
 
     .hero-text button {
+      margin-top: 25px;
       padding: 14px 30px;
       font-size: 16px;
-      border-radius: 40px;
+      background: #16a34a;
       border: none;
+      border-radius: 30px;
+      color: #fff;
       cursor: pointer;
-      font-weight: 600;
-      background: #fff;
-      color: #ff7a18;
     }
 
     .hero-img img {
-      max-width: 420px;
-      border-radius: 12px;
+      max-width: 340px;
+      border-radius: 20px;
     }
 
-    /* ===== CTA BUTTONS (Like Image 2) ===== */
-    .cta-section {
+    section {
       padding: 60px 20px;
       text-align: center;
     }
 
-    .cta-btn {
-      display: block;
-      width: 90%;
-      max-width: 420px;
-      margin: 18px auto;
-      padding: 18px;
-      border-radius: 50px;
-      font-size: 18px;
-      font-weight: 600;
-      border: none;
-      background: #8b0022;
-      color: #fff;
-      cursor: pointer;
+    section h3 {
+      font-size: 28px;
+      color: #020617;
     }
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: #111;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
+    section p {
+      margin-top: 10px;
+      color: #475569;
     }
 
-    footer .social a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
+    .social {
+      position: fixed;
+      right: 15px;
+      bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
-    /* ===== WhatsApp Floating ===== */
+    .social a img {
+      width: 48px;
+      height: 48px;
+    }
+
     .whatsapp {
       position: fixed;
-      right: 20px;
+      right: 15px;
       bottom: 20px;
-      background: #25D366;
-      color: #fff;
-      padding: 14px 18px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
-    @media(max-width:768px){
-      .hero { flex-direction: column; text-align: center; }
-      .hero-img img { margin-top: 30px; }
-      .hero-text h1 { font-size: 36px; }
+    .whatsapp img {
+      width: 60px;
     }
-  </style></head>
-<body>  <!-- HEADER -->  <header>
-    <div class="logo">SKILL WALI LIFE</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>  <!-- HERO -->  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>Improve Your Digital Skills</h1>
-      <p>Students, Job Persons, Housewives & Freshers के लिए Best Digital Skills Platform – 2026</p>
-      <button onclick="window.location.href='https://wa.me/919816892422?text=Hi%20I%20want%20to%20learn%20digital%20skills%20for%202026'">Book Free Guidance</button>
-    </div>
-    <div class="hero-img">
-      <img src="https://images.unsplash.com/photo-1600195077079-7a33c1f57c4b" alt="Learning" />
-    </div>
-  </section>  <!-- CTA SECTION -->  <section class="cta-section" id="courses">
-    <button class="cta-btn">Explore Digital Skills</button>
-    <button class="cta-btn">Fees & Scholarships</button>
-    <button class="cta-btn">Life at Skill Wali Life</button>
-  </section>  <!-- FOOTER -->  <footer id="contact">
-    <p>© 2026 Skill Wali Life. All Rights Reserved.</p>
-    <div class="social">
-      <a href="https://www.instagram.com/skillwalilife" target="_blank">Instagram</a>
-      <a href="https://youtube.com/@skillwalilife" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">Facebook</a>
-    </div>
-  </footer>  <!-- WhatsApp Floating --><a class="whatsapp" target="_blank" href="https://wa.me/919816892422?text=Hi%20I%20visited%20Skill%20Wali%20Life%20website%20and%20want%20to%20start%20learning%20digital%20skills">WhatsApp</a>
+
+    footer {
+      background: #020617;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Skill Wali Life</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h2>Learn Digital Skills & Build Your Online Income</h2>
+    <p>
+      Students, Job Persons, Housewives & Freshers ke liye best platform  
+      jahan aap Digital Skills, Freelancing aur Online Earning seekh sakte ho.
+    </p>
+    <button onclick="openWhatsApp()">Start Learning</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Smart girl with books">
+  </div>
+</section>
+
+<section id="skills">
+  <h3>What You Will Learn</h3>
+  <p>Digital Skills • Freelancing • Online Income • Personal Growth</p>
+</section>
+
+<footer id="contact">
+  <p>© 2026 Skill Wali Life | All Rights Reserved</p>
+</footer>
+
+<!-- Social Icons -->
+<div class="social">
+  <a href="https://www.instagram.com/skillwalilife" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+  </a>
+  <a href="https://youtube.com/@skillwalilife" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+  </a>
+  <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+  </a>
+</div>
+
+<!-- WhatsApp -->
+<div class="whatsapp">
+  <a id="waLink" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  </a>
+</div>
+
+<script>
+  function openWhatsApp() {
+    const msg = "Hi! Maine Skillwalilife.in Website ko Visit kiya | Main Digital Skills seekhkar paisa kamana chahta/chahti hoon |";
+    const url = "https://wa.me/919816892422?text=" + encodeURIComponent(msg);
+    window.open(url, "_blank");
+  }
+
+  document.getElementById("waLink").href =
+    "https://wa.me/919816892422?text=" +
+    encodeURIComponent("Hi! Maine Skillwalilife.in Website ko Visit kiya | Main Digital Skills seekhkar paisa kamana chahta/chahti hoon |");
+</script>
 
 </body>
 </html>
