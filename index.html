@@ -1,115 +1,170 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Wali Life | Digital Skills for 2026</title>  <!-- Google Font (Font style like Image 2 – Bold, Clean, Professional) -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
-  <title>Digital Skills & Freelancing in 2026 | Skill Wali Life</title>
+    body { background:#fff; color:#111; }
 
-  <meta name="description" content="2026 के लिए जरूरी Digital Skills, Freelancing और Online Earning Skills. Students, Job Persons, Housewives और Freshers के लिए Best Learning Platform." />
-
-  <meta name="robots" content="index, follow" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #ffffff;
-    }
+    /* ===== HEADER ===== */
     header {
-      background: #020617;
-      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 15px 25px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
-    header h2 {
-      margin: 0;
-      color: #22c55e;
+
+    header .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
     }
-    nav a {
-      color: #ffffff;
-      margin-left: 15px;
+
+    header nav a {
+      margin-left: 18px;
       text-decoration: none;
       font-weight: 500;
+      color: #111;
     }
+
+    /* ===== HERO (Layout like Image 1) ===== */
     .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover;
+      margin-top: 80px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      background: linear-gradient(to right, #ff9f55, #ffb877);
     }
-    .hero h1 {
-      font-size: 2.2rem;
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #fff;
       margin-bottom: 15px;
     }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: auto;
+
+    .hero-text p {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 25px;
     }
-    .btn {
-      margin-top: 25px;
-      display: inline-block;
-      background: #22c55e;
-      color: #020617;
-      padding: 12px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
+
+    .hero-text button {
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      background: #fff;
+      color: #ff7a18;
     }
-    section {
+
+    .hero-img img {
+      max-width: 420px;
+      border-radius: 12px;
+    }
+
+    /* ===== CTA BUTTONS (Like Image 2) ===== */
+    .cta-section {
       padding: 60px 20px;
       text-align: center;
     }
-    footer {
-      background: #020617;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
+
+    .cta-btn {
+      display: block;
+      width: 90%;
+      max-width: 420px;
+      margin: 18px auto;
+      padding: 18px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      background: #8b0022;
+      color: #fff;
+      cursor: pointer;
     }
-  </style>
-</head>
 
-<body>
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
 
-<header>
-  <h2>Skill Wali Life</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#courses">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    footer .social a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-<section class="hero" id="home">
-  <h1>Empower Your Digital Skills for 2026</h1>
-  <p>
-    Students, Job Persons, Housewives & Freshers के लिए  
-    2026 की सबसे जरूरी Digital Skills, Freelancing और Online Earning Skills
-  </p>
-  <a class="btn" href="#courses">Explore Skills</a>
-</section>
+    /* ===== WhatsApp Floating ===== */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
 
-<section id="courses">
-  <h2>Future Ready Skills (2026)</h2>
-  <p>
-    Digital Skills • Freelancing • AI Tools • Online Earning
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>WhatsApp: <a style="color:#22c55e" href="https://wa.me/9816892422">9816892422</a></p>
-</section>
-
-<footer>
-  © 2026 Skill Wali Life | All Rights Reserved
-</footer>
+    @media(max-width:768px){
+      .hero { flex-direction: column; text-align: center; }
+      .hero-img img { margin-top: 30px; }
+      .hero-text h1 { font-size: 36px; }
+    }
+  </style></head>
+<body>  <!-- HEADER -->  <header>
+    <div class="logo">SKILL WALI LIFE</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <!-- HERO -->  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Improve Your Digital Skills</h1>
+      <p>Students, Job Persons, Housewives & Freshers के लिए Best Digital Skills Platform – 2026</p>
+      <button onclick="window.location.href='https://wa.me/919816892422?text=Hi%20I%20want%20to%20learn%20digital%20skills%20for%202026'">Book Free Guidance</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1600195077079-7a33c1f57c4b" alt="Learning" />
+    </div>
+  </section>  <!-- CTA SECTION -->  <section class="cta-section" id="courses">
+    <button class="cta-btn">Explore Digital Skills</button>
+    <button class="cta-btn">Fees & Scholarships</button>
+    <button class="cta-btn">Life at Skill Wali Life</button>
+  </section>  <!-- FOOTER -->  <footer id="contact">
+    <p>© 2026 Skill Wali Life. All Rights Reserved.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/skillwalilife" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@skillwalilife" target="_blank">YouTube</a>
+      <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">Facebook</a>
+    </div>
+  </footer>  <!-- WhatsApp Floating --><a class="whatsapp" target="_blank" href="https://wa.me/919816892422?text=Hi%20I%20visited%20Skill%20Wali%20Life%20website%20and%20want%20to%20start%20learning%20digital%20skills">WhatsApp</a>
 
 </body>
 </html>
