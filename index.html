@@ -7,124 +7,27 @@
   <meta name="description" content="Learn Digital Skills, Freelancing & Online Earning. Best platform for Students, Job Persons, Housewives & Freshers." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-
-    body { background: #ffffff; color: #1a1a1a; }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #0f172a;
-      color: #fff;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    header h1 { font-size: 20px; }
-
-    nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .hero {
-      margin-top: 80px;
-      padding: 60px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      background: #f8fafc;
-    }
-
-    .hero-text {
-      max-width: 520px;
-      padding: 20px;
-    }
-
-    .hero-text h2 {
-      font-size: 36px;
-      font-weight: 700;
-      color: #020617;
-    }
-
-    .hero-text p {
-      margin-top: 15px;
-      font-size: 16px;
-      color: #334155;
-    }
-
-    .hero-text button {
-      margin-top: 25px;
-      padding: 14px 30px;
-      font-size: 16px;
-      background: #16a34a;
-      border: none;
-      border-radius: 30px;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .hero-img img {
-      max-width: 340px;
-      border-radius: 20px;
-    }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    section h3 {
-      font-size: 28px;
-      color: #020617;
-    }
-
-    section p {
-      margin-top: 10px;
-      color: #475569;
-    }
-
-    .social {
-      position: fixed;
-      right: 15px;
-      bottom: 100px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .social a img {
-      width: 48px;
-      height: 48px;
-    }
-
-    .whatsapp {
-      position: fixed;
-      right: 15px;
-      bottom: 20px;
-    }
-
-    .whatsapp img {
-      width: 60px;
-    }
-
-    footer {
-      background: #020617;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#fff;color:#1a1a1a}
+    header{position:fixed;top:0;width:100%;background:#0f172a;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+    nav a{color:#fff;margin-left:15px;text-decoration:none;font-weight:500}
+    .hero{margin-top:80px;padding:60px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;background:#f8fafc}
+    .hero-text{max-width:520px;padding:20px}
+    .hero-text h2{font-size:36px;color:#020617}
+    .hero-text p{margin-top:15px;color:#334155}
+    .hero-text button{margin-top:25px;padding:14px 30px;background:#16a34a;border:none;border-radius:30px;color:#fff;cursor:pointer}
+    .hero-img img{max-width:340px;border-radius:20px}
+    section{padding:60px 20px;text-align:center}
+    h3{color:#020617}
+    p{color:#475569}
+    footer{background:#020617;color:#fff;padding:20px;text-align:center}
+    .social{position:fixed;right:15px;bottom:100px;display:flex;flex-direction:column;gap:12px}
+    .social img{width:48px}
+    .whatsapp{position:fixed;right:15px;bottom:20px}
+    .whatsapp img{width:60px}
   </style>
 </head>
 
@@ -135,6 +38,7 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
+    <a href="blog.html">Blog</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -142,15 +46,10 @@
 <section class="hero" id="home">
   <div class="hero-text">
     <h2>Learn Digital Skills & Build Your Online Income</h2>
-    <p>
-      Students, Job Persons, Housewives & Freshers ke liye best platform  
-      jahan aap Digital Skills, Freelancing aur Online Earning seekh sakte ho.
-    </p>
+    <p>Students, Job Persons, Housewives & Freshers ke liye Digital Skills, Freelancing aur Online Earning.</p>
     <button onclick="openWhatsApp()">Start Learning</button>
   </div>
-
   <div class="hero-img">
-    <!-- ✅ ONLY IMAGE CHANGED HERE -->
     <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Smart girl working on laptop">
   </div>
 </section>
@@ -160,40 +59,38 @@
   <p>Digital Skills • Freelancing • Online Income • Personal Growth</p>
 </section>
 
+<!-- SEO KEYWORDS SECTION -->
+<section>
+  <h3>Popular Digital Skills & Online Earning Keywords</h3>
+  <p>
+    Digital Skills, Freelancing, Online Earning, Work From Home,
+    Affiliate Marketing, Skill Development, Earn Money Online,
+    Students Online Income, Freshers Digital Skills
+  </p>
+</section>
+
 <footer id="contact">
-  <p>© 2026 Skill Wali Life | All Rights Reserved</p>
+  © 2026 Skill Wali Life | All Rights Reserved
 </footer>
 
-<!-- Social Icons -->
 <div class="social">
-  <a href="https://www.instagram.com/skillwalilife" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
-  </a>
-  <a href="https://youtube.com/@skillwalilife" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-  </a>
-  <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-  </a>
+  <a href="https://www.instagram.com/skillwalilife" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+  <a href="https://youtube.com/@skillwalilife" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
+  <a href="https://www.facebook.com/share/1EZWWeKKgP/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
 </div>
 
-<!-- WhatsApp -->
 <div class="whatsapp">
-  <a id="waLink" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-  </a>
+  <a id="waLink" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
 </div>
 
 <script>
-  function openWhatsApp() {
-    const msg = "Hi! Maine Skillwalilife.in Website ko Visit kiya | Main Digital Skills seekhkar paisa kamana chahta/chahti hoon |";
-    const url = "https://wa.me/919816892422?text=" + encodeURIComponent(msg);
-    window.open(url, "_blank");
-  }
-
+  const msg = "Hi! Maine Skillwalilife.in Website ko Visit kiya | Main Digital Skills seekhkar paisa kamana chahta/chahti hoon |";
   document.getElementById("waLink").href =
-    "https://wa.me/919816892422?text=" +
-    encodeURIComponent("Hi! Maine Skillwalilife.in Website ko Visit kiya | Main Digital Skills seekhkar paisa kamana chahta/chahti hoon |");
+    "https://wa.me/919816892422?text=" + encodeURIComponent(msg);
+
+  function openWhatsApp(){
+    window.open("https://wa.me/919816892422?text="+encodeURIComponent(msg),"_blank");
+  }
 </script>
 
 </body>
